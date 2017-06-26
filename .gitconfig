@@ -1,0 +1,14 @@
+[user]
+	name = Nolan Lancaster
+	email = nolancaster@gmail.com
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	br = branch
+	com = commit
+	st = status
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=86400
