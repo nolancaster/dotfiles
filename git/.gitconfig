@@ -3,6 +3,7 @@
 	email = nolancaster@gmail.com
 [core]
 	editor = vim
+    excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout
 	br = branch
@@ -11,4 +12,8 @@
 [push]
 	default = simple
 [credential]
-	helper = cache --timeout=86400
+	helper = cache --timeout=3600
+[branch]
+    autosetuprebase = always
+[rerere]
+    enabled = true
