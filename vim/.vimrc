@@ -30,7 +30,6 @@ endif
 " Backups & Files
 set nobackup                   	" Disable creation of backup file.
 set noswapfile                  " Disable creation of swap files.
-set backupdir=~/.vim/backups//	" Where backups will go.
 
 " SETTINGS
 
