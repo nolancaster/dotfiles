@@ -85,3 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 DEFAULT_USER=$USER
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+alias zshconfig="subl ~/.zshrc"
+alias fleet="docker-compose run --service-ports web"
+alias fconsole="docker-compose run --rm web bin/rails console"
