@@ -15,16 +15,16 @@ set t_Co=256
 " CSApprox-generated colorscheme for terminal
 colorscheme soruby
 
-" enables syntax highlighting
-if has("syntax")
-	syntax on
-endif
-
 if has("autocmd")
 	" jump to the last position when reopening a file
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 	" load indentation rules and plugins according to the detected filetype.
 	filetype plugin indent on
+endif
+
+" enables syntax highlighting
+if has("syntax")
+	syntax on
 endif
 
 " Backups & Files
