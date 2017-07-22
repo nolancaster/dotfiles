@@ -10,10 +10,8 @@ endif
 " Automatically detect file types.
 filetype on
 
-" enable 256 colors in terminal
+colorscheme railscasts
 set t_Co=256
-" CSApprox-generated colorscheme for terminal
-colorscheme soruby
 
 if has("autocmd")
 	" jump to the last position when reopening a file
@@ -22,7 +20,7 @@ if has("autocmd")
 	filetype plugin indent on
 endif
 
-" enables syntax highlighting
+" ENABles syntax highlighting
 if has("syntax")
 	syntax on
 endif
