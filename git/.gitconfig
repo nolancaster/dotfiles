@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/nlancaster/.gitignore_global
+	autocrlf = true
 [alias]
 	co = checkout
 	br = branch
