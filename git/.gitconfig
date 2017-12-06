@@ -10,6 +10,7 @@
 	br = branch
 	com = commit
 	st = status
+    pushup = push -u origin HEAD
 [push]
 	default = simple
 [credential]
