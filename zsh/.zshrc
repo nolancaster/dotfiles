@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/nolan/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -88,9 +88,14 @@ alias zshconfig="vim ~/.zshrc"
 
 DEFAULT_USER=$USER
 
-export PATH=~/.npm-global/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+typeset -U path
+path+=(~/.npm-global/bin)
+path+=(~/.rbenv/bin)
+path+=(/usr/local/bin)
+
+if type rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+fi
 
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
