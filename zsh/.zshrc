@@ -51,7 +51,8 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime docker docker-compose ruby rails rbenv git-flow zsh-autosuggestions history-substring-search)
+plugins=(git sublime docker docker-compose ruby rails rbenv git-flow 
+        zsh-autosuggestions history-substring-search last-working-dir)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,5 +100,6 @@ fi
 
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+bindkey -M vicmd v edit-command-line
 
 bindkey -v
